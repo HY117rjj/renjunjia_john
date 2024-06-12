@@ -1,0 +1,90 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#box {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#head {
+	background-image: url(../images/head.jpg);
+	background-repeat: no-repeat;
+	height: 178px;
+}
+
+#main {
+	background-image: url(../images/main.jpg);
+	background-repeat: no-repeat;
+	width: 900px;
+	height: 423px;
+}
+
+#footer {
+	background-image: url(../images/foot.jpg);
+	background-repeat: no-repeat;
+	width: 900px;
+	height: 104px;
+}
+
+#main-input {
+	position: relative;
+	width: 280px;
+	top: 120px;
+	left: 500px;
+}
+
+.main1,.main2 {
+	width: 231px;
+	height: 50px;
+}
+
+.main1 {
+	background-image: url(../images/main1.png);
+}
+
+.main2 {
+	background-image: url(../images/main2.png);
+	margin-top: 5px;
+}
+
+.main1>input,.main2>input {
+	float: right;
+	width: 143px;
+	height: 37px;
+	line-height: 37px;
+	margin-top: 3px;
+	margin-right: 2px;
+	border: none;
+}
+
+#login-div-id {
+	position: relative;
+	left: 68px;
+	top: 20px;
+	background-image: url(../images/login.png);
+	height: 51px;
+	width: 167px;
+}
+
+#login-div-id a {
+	display: block;
+	width: 40px;
+	height: 50px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+}
+
+#login-div-id>.a1 {
+	float: left;
+	margin: 18px 0px 0px 29px;
+}
+
+#login-div-id>.a2 {
+	float: right;
+	margin: 18px 26px 0px 0px;
+}

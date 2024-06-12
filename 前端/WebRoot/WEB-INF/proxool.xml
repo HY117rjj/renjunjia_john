@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxool-config>
+
+   <proxool>
+     <alias>db2</alias>      
+	<driver-url>jdbc:db2://192.168.1.46:50000/activiti</driver-url>
+	<driver-class>com.ibm.db2.jcc.DB2Driver</driver-class>
+	<driver-properties>
+		<property name="user" value="db2admin"/>
+		<property name="password" value="admin!@#123"/>
+	</driver-properties>
+	
+    <house-keeping-sleep-time>60000</house-keeping-sleep-time> 
+	<simultaneous-build-throttle>60</simultaneous-build-throttle>
+	<prototype-count>30</prototype-count>
+	<maximum-connection-count>300</maximum-connection-count> 
+	<minimum-connection-count>50</minimum-connection-count>
+	<maximum-active-time>600000</maximum-active-time>
+	<maximum-connection-lifetime>1200000</maximum-connection-lifetime> 
+  </proxool>
+     
+</proxool-config>

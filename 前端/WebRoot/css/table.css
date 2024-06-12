@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+.BtnDiv {
+	padding: 2px;
+	border: 3px double #7EC2C5;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table {
+	background: #e7e7e7;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #7592ac;
+}
+
+.title {
+	background: #cae0f7;
+	border: 1px solid #7592ac;
+	text-align: center;
+	height: 25px;
+}
+
+.input {
+	background: #e7e7e7;
+	border: 1px solid #7592ac;
+	padding-left: 15px;
+	height: 25px;
+}
+
+.tijiao {
+	padding-left: 15px;
+	height: 50px;
+	padding-top: 15px
+}
+
+.input_select {
+	background: #e7e7e7;
+	border: 1 solid #7592ac;
+	padding-left: 0px;
+}
+
+.table1 {
+	background: #e7e7e7;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.title1 {
+	background: #cae0f7;
+	border: 1 solid #7592ac;
+	text-align: center;
+	height: 25px;
+}
+
+.input1 {
+	background: #e7e7e7;
+	border: 1 solid #7592ac;
+	padding-left: 15px;
+	height: 25px;
+}
+
+.input2 {
+	background: #e7e7e7;
+	border: 1 solid #7592ac;
+	text-align: center;
+	height: 25px;
+}
+
+/*医院列表页面样式*/
+.center {
+	min-height: 200px;
+	_height: 200px;
+	text-align: center;
+}
+
+.position {
+	text-align: left;
+	padding-left: 20px;
+	height: 30px;
+	padding-top: 5px;
+	background: #cbdddb;
+}
+
+.hospital {
+	text-align: left;
+	padding: 20px;
+	color: #0c5736;
+}
+
+.hospital dl {
+	overflow: hidden;
+	color: #0c5736;
+}
+
+.hospital dl dt {
+	font-size: 12px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 24px;
+	width: 80px;
+	line-height: 24px;
+	vertical-align: middle;
+	text-align: center;
+	background: #396;
+	font-weight: bold;
+}
+
+.hospital dl dd {
+	border-top: 2px solid #396;
+	overflow: hidden;
+	color: #0c5736;
+}
+
+.hospital dl dd li {
+	width: 210px;
+	float: left;
+	padding-left: 20px;
+	height: 25px;
+	margin-top: 5px;
+	line-height: 25px;
+	background: url("../images/hospital.png") left center no-repeat;
+}
+
+.hospital a,.hospital a:visited {
+	color: #0E5334;
+}
+
+.hospital a:hover {
+	color: #0E5334;
+	text-decoration: underline;
+}

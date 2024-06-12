@@ -1,0 +1,26 @@
+html {
+	scrollbar-face-color: #e5edef;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-3dlight-color: #9EBFE8;
+	scrollbar-darkshadow-color: #9EBFE8;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #FFFFFF\9\0;
+}
+
+input {
+	border: 1px solid #95B8E7;
+}
+
+.info {
+	background: #FFFEE6;
+	color: #8F5700;
+	padding: 12px;
+}
+
+.tip {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	float: left;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+	
+	<!-- 标准字典 -->
+	<bean id="stdService" class="com.ycyl.edu.std.service.impl.StdServiceImpl">
+		<property name="stdDiseaseDao">
+			<ref local="StdDiseaseDAO"></ref>
+		</property>
+		<property name="stdConsultationSubjectDao">
+			<ref local="StdConsultationSubjectDAO"></ref>
+		</property>
+		<property name="stdPosttechnologyDao">
+			<ref local="StdPosttechnologyDAO"></ref>
+		</property>
+		<property name="stdEducationalMajorDao">
+			<ref local="StdEducationalMajorDAO"></ref>
+		</property>
+		<property name="stdEduNatureDao">
+			<ref local="StdEduNatureDAO"></ref>
+		</property>
+		<property name="stdEduModalityDao">
+			<ref local="StdEduModalityDAO"></ref>
+		</property>
+		
+		<property name="stdEduFormDao">
+			<ref local="StdEduFormDAO"></ref>
+		</property>
+		
+		<property name="stdEduHealthCardDao">
+			<ref local="StdEduHealthCardDAO"></ref>
+		</property>
+		
+		<property name="stdEduReleaseDAO">
+			<ref local="StdEduReleaseDAO"></ref>
+		</property>
+	</bean>
+	
+	<bean id="StdDiseaseDAO" class="com.ycyl.edu.std.dao.impl.StdDiseaseDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="StdConsultationSubjectDAO" class="com.ycyl.edu.std.dao.impl.StdConsultationSubjectDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="StdPosttechnologyDAO" class="com.ycyl.edu.std.dao.impl.StdPosttechnologyDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="StdEducationalMajorDAO" class="com.ycyl.edu.std.dao.impl.StdEducationalMajorDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="StdEduNatureDAO" class="com.ycyl.edu.std.dao.impl.StdEduNatureDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="StdEduModalityDAO" class="com.ycyl.edu.std.dao.impl.StdEduModalityDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="StdEduFormDAO" class="com.ycyl.edu.std.dao.impl.StdEduFormDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="StdEduHealthCardDAO" class="com.ycyl.edu.std.dao.impl.StdEduHealthCardDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="StdEduReleaseDAO" class="com.ycyl.edu.std.dao.impl.StdEduReleaseDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+</beans>

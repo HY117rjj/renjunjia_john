@@ -1,0 +1,28 @@
+<body>
+    <div align="center" style="padding-top:50px">
+        <input type="text" style="width:300px;height:20px;font-size:14pt;" placeholder="请输入a或b模拟效果"
+        id="o" onkeyup="autoComplete.start(event)" />
+    </div>
+    <div class="auto_hidden" id="auto">
+        <!--自动完成 DIV-->
+    </div>
+    <script>
+        //在这里我需要知道你是怎么动态获取文本的值？   
+        var dataf = [];
+        $.ajax({
+            url: "../sousuo/sousuo.aspx/comp",
+            type: "POST",
+            dataType: "json",
+            data: "{ 'companyname': '" + targetVal + "' }",
+            contentType: "application/json; charset=utf-8",
+            //该属性表示前台请求到的数据为返回json数据格式的方法        
+            async: false,
+            success: function(data) {
+                dataf = eval(data.d);
+                //数组          
+            }
+        });
+        alert(dataf);
+        var autoComplete = new AutoComplete('o', 'auto', [dataf]);
+    </script>
+</body>

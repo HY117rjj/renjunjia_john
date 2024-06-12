@@ -1,0 +1,11 @@
+2016/05/10 10:11:14 [notice] 6108#5036: signal process started
+2017/02/04 13:33:43 [emerg] 13084#12056: CreateDirectory() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2017/02/04 13:44:01 [emerg] 7188#6668: CreateDirectory() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2017/02/04 13:44:56 [notice] 1064#5148: signal process started
+2017/02/04 13:44:56 [error] 1064#5148: CreateFile() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2017/02/04 13:44:57 [emerg] 12956#10320: CreateDirectory() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2017/02/04 13:45:49 [notice] 5336#13564: signal process started
+2017/02/04 13:45:49 [error] 5336#13564: CreateFile() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2017/02/04 13:45:51 [notice] 1944#12116: signal process started
+2017/02/04 13:45:51 [error] 1944#12116: CreateFile() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2017/02/04 13:45:52 [emerg] 13476#13216: CreateDirectory() "C:\Users\Kay\Desktop\amazeuiUpload-master\nginx/temp/client_body_temp" failed (3: The system cannot find the path specified)

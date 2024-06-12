@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+	<table name="STDCONSULTATIONSUBJECT_" schema="YCYL"
+		class="StdConsultationSubject">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STDDISEASE_" schema="YCYL" class="StdDisease">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STDEDUCATIONALMAJOR_" schema="YCYL"
+		class="StdEducationalMajor">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STDPOSTTECHNOLOGY_" schema="YCYL"
+		class="StdPosttechnology">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STD_EDU_MODALITY_" schema="YCYL"
+		class="StdEduModality">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STD_EDU_NATURE_" schema="YCYL" class="StdEduNature">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STD_EDU_FORM" schema="YCYL" class="StdEduForm">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STD_EDU_HEALTHCARE_" schema="YCYL"
+		class="StdEduHealthCard">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="EDU_NOTICE" schema="YCYL" class="EduNotice">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="STD_EDU_RELEASE_" schema="YCYL"
+		class="StdEduRelease">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="IMAGE_BASIC" schema="YCYL" class="ImageBasic">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="MS_CVD" schema="YCYL" class="MSCvd">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="MS_FFQ25" schema="YCYL" class="MSFfq25">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="MS_IPAQ" schema="YCYL" class="MSIpaq">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="MS_PHYSIOLOGY" schema="YCYL" class="MSPhysiology">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="MS_SF_36" schema="YCYL" class="MSSf36">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="EDU_COURSEWARE_MESSAGE" schema="YCYL"
+		class="EduCoursewareMessage">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+<table name="STD_DRUG" schema="YCYL" class="StdDrug">
+	<primary-key>
+		<generator class="native"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

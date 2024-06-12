@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+	
+	<!-- 登陆管理-->
+	<bean id="loginService" class="com.ycyl.edu.login.service.impl.LoginServiceImpl">
+		<property name="loginDao">
+			<ref local="LoginDao"></ref>
+		</property>	
+	</bean>	
+	<bean id="LoginDao" class="com.ycyl.edu.login.dao.impl.LoginDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	
+	
+</beans>

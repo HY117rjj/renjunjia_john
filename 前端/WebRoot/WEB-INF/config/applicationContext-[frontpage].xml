@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+	
+	<!-- 教育培训-->
+	<bean id="eduDemandService" class="com.ycyl.edu.frontpage.service.impl.EduDemandServiceImpl">
+		<property name="eduCoursewareDao">
+			<ref local="eduCoursewareDAO"></ref>
+		</property>
+		<property name="eduUserDao">
+			<ref local="eduUserDAO"></ref>
+		</property>
+		<property name="eduUserDetailsDao">
+			<ref local="eduUserDetailsDAO"></ref>
+		</property>
+	</bean>
+	<bean id="eduChairService" class="com.ycyl.edu.frontpage.service.impl.EduChairServiceImpl">
+		<property name="eduLectureDao">
+			<ref local="eduLectureDAO"></ref>
+		</property>
+		<property name="eduLectureAppointmentDao">
+			<ref local="eduLectureAppointmentDAO"></ref>
+		</property>
+		<property name="eduLectureAutonomyDao">
+			<ref local="eduLectureAutonomyDAO"></ref>
+		</property>
+		<property name="eduStudentDao">
+			<ref local="eduStudentDAO"></ref>
+		</property>
+		<property name="eduStudentDetailsDao">
+			<ref local="eduStudentDetailsDAO"></ref>
+		</property>
+	</bean>
+	<bean id="eduTelecastService" class="com.ycyl.edu.frontpage.service.impl.EduTelecastServiceImpl">
+	
+	</bean>
+</beans>

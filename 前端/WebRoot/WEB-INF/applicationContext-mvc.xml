@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd	
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<mvc:annotation-driven />
+
+	<!--需要自动扫描装配的bean(目录)-->	
+	<context:component-scan base-package="com.ycyl.edu.*.dao,com.ycyl.edu.*.service,com.ycyl.edu.*.controller"/>
+
+	<!-- 处理静态资源,不过滤静态资源 -->
+	<mvc:resources location="/css/" mapping="/css/**"/>
+	<mvc:resources location="/images/" mapping="/images/**"/>
+	<mvc:resources location="/js/" mapping="/js/**"/>
+	
+	<mvc:interceptors>		
+		<mvc:interceptor>
+			<mvc:mapping path="/**/*.do*"/>
+			<bean class="com.ycyl.edu.interceptor.RightsHandlerInterceptor">
+				<!-- 不需要权限验证的地址 -->
+				<property name="excludeUrls">
+					<list>
+						<value>/index.do</value><!-- 首页左侧功能菜单 -->
+						<value>/systemlogin.do</value><!-- 后台管理登陆 -->
+						<value>/systemLoading.do</value><!-- 后台管理验证 -->
+						<value>/moreVideo.do</value><!-- 更多视频 -->
+						<!--<value>/demand/listHE.do</value> 健康教育 -->
+						<value>/student/editPersonalDataRegister.do</value><!-- 用户注册 -->
+						<value>/student/savePersonalDataRegister.do</value><!-- 用户注册 -->
+						<value>/notice/getFrontPagelist.do</value><!-- 通知通告首页 -->
+						<value>/notice/viewNoticeFrontPage.do</value><!-- 通知通告详情页 -->
+						<value>/notice/getFrontPagelist.do</value><!-- 通知通告列表 -->
+						<value>/courseware/uploading.do</value><!-- 上传文件 上传被拦截获取不到SessionInfo -->
+						<value>/chair/networkFlow.do</value><!-- 网络流量监控 -->
+						<value>/moreTeacher.do</value><!-- 更多专家 -->
+						<!--<value>/demand/listForFrontPage.do</value> 专家风采首页链接课程信息 -->
+						<!--<value>/demand/demandCoursewareForFrontPage.do</value> 专家风采首页链接课程信息点播 -->
+					</list>
+				</property>
+			</bean>
+		</mvc:interceptor>
+		 
+	</mvc:interceptors>
+	<!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+		
+	</bean>
+	<!-- 异常的处理 -->
+	<bean id="exceptionResolver" class="com.ycyl.edu.resolver.MyExceptionResolver"></bean>
+	
+	<bean id="multipartResolver"  
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+        <!-- set the max upload size100MB -->  
+        <property name="maxUploadSize">  
+            <value>10485760000</value>  
+        </property>  
+        <property name="maxInMemorySize">  
+            <value>4096</value>  
+        </property>  
+    </bean>  
+	
+</beans>
